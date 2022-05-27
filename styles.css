@@ -16,10 +16,12 @@ h1,h2,h3,h4,h5,h6, span{
     color: #242424;
     text-align: center;
     line-height: 1.25;
+    filter: drop-shadow(-3px 2px 1px #00000011);
 }
 
-h1{
+h1, h1.section__title{
    font-size: 36px; 
+   filter: drop-shadow(-3px 2px 10px #00000011);
 }
 
 p{
@@ -83,6 +85,7 @@ section:nth-child(even){
 }
 .section__title{
     margin-bottom: 20px;
+    filter: drop-shadow(-3px 2px 1px #00000011);
 }
 /* NAVIGATION BAR */
 
@@ -179,7 +182,7 @@ nav{
 }
 .about-me__info--title{
     margin-bottom: 16px;
-    filter: drop-shadow(-3px 2px 1px #00000011);
+    
     animation: fade-up 650ms 400ms backwards;
 }
 .about-me__info--para{
@@ -388,15 +391,17 @@ footer{
     
 }
 .footer__logo--img{
-    filter: invert(1);
+    filter: drop-shadow(-3px 2px 1px #00000011);
     height: 70px;
     width: 70px;
+    
 }
 
 .footer__social--link,
 .footer__copyright,
 .footer__logo--popper {
   color: #fff;
+  
 }
 .footer__logo--popper{
     position: absolute;
@@ -410,11 +415,13 @@ footer{
 .footer__anchor{
     margin-bottom: 20px;
     position: relative;
+    
 
 }
 .footer__anchor:hover .footer__logo--popper{
     transform: translateX(60px);
     opacity: 1;
+    filter: drop-shadow(-3px 2px 1px #00000011);
 }
 /*SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width:768px) {
